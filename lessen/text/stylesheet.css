@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Proto Sans 56';
+    src: url('ProtoSans56.eot');
+    src: url('ProtoSans56.eot?#iefix') format('embedded-opentype'),
+        url('ProtoSans56.woff2') format('woff2'),
+        url('ProtoSans56.woff') format('woff'),
+        url('ProtoSans56.ttf') format('truetype'),
+        url('ProtoSans56.svg#ProtoSans56') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
