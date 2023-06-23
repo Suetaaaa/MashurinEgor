@@ -20,15 +20,36 @@
             margin: 0px auto;
         }
 
+        .head li {
+            float: left;
+            padding: 0px 25px;
+        }
+
+
+
         ul {
             font-family: Montserrat;
             font-weight: 600;
             font-size: 16px;
         }
 
-        li {
-            float: left; 
-            padding: 0px 25px;
+        .up {
+            border-bottom: solid 1px #D1D5DB;
+            margin-top: 50px;
+            width: 90%;
+            flex-direction: column;
+            color: #111827;
+            font-size: 22px;
+            font-weight: 500;
+
+        }
+
+        .both {
+            margin-top: 30px;
+            width: 348px;
+            color: #003B77;
+            font-size: 50px;
+            font-weight: 500;
         }
 
         a {
@@ -47,6 +68,13 @@
             font-family: Montserrat;
             color: #FFF;
             padding: 20px 25px;
+        }
+        
+        .comp {
+            color: #111827;
+            font-size: 24px;
+            font-family: Montserrat;
+            padding: 15px 50px 0px 370px;
         }
 
         h2 {
@@ -69,6 +97,13 @@
             color: #F3F3F3;
             padding: 10px 0px;
         }
+
+        h4 {
+            color: #003B77;
+            font-size: 52px;
+            font-family: Montserrat;
+            line-height: 140%;
+        }
     </style>
 </head>
 
@@ -78,7 +113,7 @@
             <div style="clear: both; overflow: hidden;">
                 <img src="img/Logo.png" alt="logo" style="float: left;">
                 <div style="float: right;">
-                    <ul style="list-style-type: none; clear: both;">
+                    <ul class="head" clear: both;">
                         <li>Наши услуги</li>
                         <li>Контакты</li>
                         <li>+375(29)546-25-67</li>
@@ -100,12 +135,13 @@
             </div>
         </div>
     </div>
-    <div style="background: url(img/XXL\ 2.png); background-position: 50% 148px; background-repeat: no-repeat; padding: 20px 0px;">
+    <div
+        style="background: url(img/XXL\ 2.png); background-position: 50% 148px; background-repeat: no-repeat; padding: 20px 0px;">
         <div class="container">
             <div style="clear: both; overflow: hidden;">
                 <img src="img/Title.png" alt="title" style="padding: 30px 0px;">
                 <h2>ТРАНСПОРТНО —</h2>
-                <h2>      ЭКСПЕДИЦИОННАЯ</h2>
+                <h2>        ЭКСПЕДИЦИОННАЯ</h2>
                 <h3 style="float: left;">КОМПАНИЯ</h3>
                 <div style="width: 30%; overflow: hidden; ">
                     <p>Мы стремимся обеспечить высокий уровень сервиса, предлагая Вам наилучшее решение
@@ -121,8 +157,44 @@
             </div>
         </div>
     </div>
-
-
+    <div style="padding: 140px 0px; ">
+        <div class="container">
+            <div style="clear: both; overflow: hidden;">
+                <h4>Наши достижения</h4>
+                <ul style="float: left;">
+                    <li class="up">Частота загрузок</li>
+                    <li class="both">61 мин.</li>
+                </ul>
+                <ul style="float: left;">
+                    <li class="up">Грузов перевезено</li>
+                    <li class="both">287 тыс.</li>
+                </ul>
+                <ul style="float: left;">
+                    <li class="up">Количество партнёров</li>
+                    <li class="both">3 165</li>
+                </ul>
+                <ul style="float: left;">
+                    <li class="up">Пройденное расстояние</li>
+                    <li class="both">42 млн. км</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div style="clear: both; overflow: hidden;">
+                <h4>О компании</h4>
+                <div>
+                    <p class="comp">Наша компания предоставляет широкий спектр услуг по доставке грузов наземным, морским, воздушным транспортом, складской обработке и страхованию грузов.</p>
+                    <p class="comp">Основываясь на глубоком понимании специфики различных отраслей, мы применяем индивидуальный подход к потребностям наших клиентов в области логистики.</p>
+                </div>
+                <img src="img/Map.png" alt="map" style="margin-top: 80px; margin-bottom: 20px;">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: #003B77;">УЗНАТЬ БОЛЬШЕ <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACeSURBVHgBpdO7DYQwEATQseWA8EqghGvlOiAjoIiDKhAZlEAlUAIlUAAC1gHImI+9ZgLvaiw9ObEApVzKWEJ2tH7ATyL1GSEaaYwISyzATLVUOY2/UeUSjFjAsPXeiAXovWYhNpCKtDDvnYgLcCI+wCPiC9wiHOAS4QInJAQ4IKHAjrwBdBT94CQEmDC1Cuo7Y26U0bNekImsp/HT+wrbOUz1eDyf0AAAAABJRU5ErkJggg=="
+                    alt="стрелочка"></a>
+            </div>
+        </div>
+    </div>
 
 
 
