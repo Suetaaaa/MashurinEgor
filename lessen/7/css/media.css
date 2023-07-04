@@ -1,0 +1,23 @@
+@media all and (max-width: 1000px) {
+
+    .left,
+    .right,
+    .centr {
+        float: none;
+    }
+
+    .left {
+        height: 100px;
+        width: auto;
+    }
+
+    .right {
+        height: 100px;
+        width: auto;
+    }
+
+    .centr {
+        height: 100px;
+        width: auto;
+    }
+}

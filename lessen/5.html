@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+
+        @media all and (max-width: 1000px) {
+
+            .left,
+            .right,
+            .centr {
+                float: none;
+            }
+
+            .left {
+                height: 100px;
+                width: auto;
+            }
+
+            .right {
+                height: 100px;
+                width: auto;
+            }
+
+            .centr {
+                height: 100px;
+                width: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div style="background-color: aqua; height: 50px;">голова</div>
-       <div style="background-color: black; clear: both; overflow: hidden;">
-         <div style="background-color: burlywood; float: left; width: 150px; height: 300px;">левая</div>
-         <div style="background-color: rgb(38, 160, 34); float: right; width: 150px; height: 300px;">правая</div>
-         <div style="background-color: red; ">тело</div>
+    <div class="head">голова</div>
+    <div class="back">
+        <div class="left">левая</div>
+        <div class="right">правая</div>
+        <div class="centr">тело</div>
     </div>
-    <div style="background-color: rgb(255, 0, 221); height: 50px; clear: both;">пятка</div>
+    <div class="bot">пятка</div>
 
 </body>
+
 </html>

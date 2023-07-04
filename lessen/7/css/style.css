@@ -1,0 +1,35 @@
+.head {
+    background-color: aqua;
+    height: 50px;
+
+}
+
+.left {
+    background-color: burlywood;
+    float: left;
+    width: 150px;
+    height: 300px;
+}
+
+.right {
+    background-color: rgb(38, 160, 34);
+    float: right;
+    width: 150px;
+    height: 300px;
+}
+
+.centr {
+    background-color: red;
+}
+
+.bot {
+    background-color: rgb(255, 0, 221);
+    height: 50px;
+    clear: both;
+}
+
+.back::after {
+    content: "";
+    clear: both;
+    display: block;
+}
