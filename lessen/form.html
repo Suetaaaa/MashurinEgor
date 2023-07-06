@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="get" style="width: 600px;">
+        <fieldset style="margin: 10px 0px;">
+            <legend>Контактная информация:</legend>
+            <label>Имя*
+                <input type="text" name="имя" style="margin: 10px 0px 10px 40px;">
+            </label><br>
+            <label>Телефон
+                <input type="text" name="номер" style="margin: 10px 0px 10px 19px">
+            </label><br>
+            <label>Email*
+                <input type="text" name="email" style="margin: 10px 0px 10px 32px">
+            </label>
+        </fieldset>
+        <fieldset style="margin: 10px 0px;">
+            <legend>Персональная информация:</legend>
+            <label>Возраст*
+                <input type="text" name="лет" style="margin: 10px 0px 10px 36px;">
+            </label><br>
+            <label>Пол:
+                <select name="пол" style="margin: 10px 0px 10px 65px; width: 177px;">
+                    <option value="ж">Женщина</option>
+                    <option value="м">Мужчина</option>
+                </select>
+            </label><br>
+            <label>Перечислите личные качества:
+                <input type="text" name="качества">
+            </label>
+        </fieldset>
+        <fieldset style="margin: 10px 0px;">
+            <legend>Выберити ваших любимых животных</legend>
+            <div style="text-align: center;">
+                <input type="checkbox" name="1">Зебра
+                <input type="checkbox" name="2">Кошак
+                <input type="checkbox" name="3">Анаконда
+                <input type="checkbox" name="4">Человек <br>
+                <input type="checkbox" name="5">Слон
+                <input type="checkbox" name="6">Антилопа
+                <input type="checkbox" name="7">Голубь
+                <input type="checkbox" name="8">Голубь
+            </div>
+        </fieldset>
+        <input type="submit" value="Отправить форму!">
+    </form>
+</body>
+
+</html>
