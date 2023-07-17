@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .one a {
+            float: left;
+        }
+
+        .one::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        img {
+            float: left;
+            margin: -4px 4px;
+        }
+
+        .two a {
+            border-right: solid red 3px;
+            padding: 5px 5px;
+        }
+
+        .two a:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--тупо значок "|" в спане, с пробелами и стелевые свойства-->
+    <div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка<span> | </span></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка<span> | </span></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка<span> | </span></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка<span> | </span></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+    </div>
+    <br> 
+    <!--тупо фоточка рисочки на флотах-->
+    <div class="one">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <img src="risochka.png">
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <img src="risochka.png">
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <img src="risochka.png">
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <img src="risochka.png">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+    </div>
+    <br> 
+    <!--тупо бордер и падингом растянул-->
+    <div class="two">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ссылка</a>
+    </div>
+
+    </div>
+</body>
+
+</html>

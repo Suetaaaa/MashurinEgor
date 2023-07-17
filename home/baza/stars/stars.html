@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARS</title>
+    <style>
+        body {
+            margin: 100px 500px;
+        }
+
+        .da {
+            height: 78px;
+            width: 75px;
+            background: url('1.png');
+            float: left;
+        }
+
+        .zvezda:hover .da {
+            background: url('2.png');
+        }
+
+        .da:hover~.da {
+            background: url('1.png');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zvezda"> <!--давай рифму :D-->
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+        <div class="da"></div>
+    </div>
+</body>
+
+</html>
