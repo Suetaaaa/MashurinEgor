@@ -7,260 +7,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DZ</title>
 
+    <link rel="stylesheet" href="drop/reset.css">
+    <link rel="stylesheet" href="drop/reset.css">
 
-    <!--font-family: 'Press Start 2P', cursive;-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!--font-family: 'Press Start 2P', cursive;-->
-
 
     <style>
         body {
-            overflow: auto;
-            background: url(images/index.png);
+            background: url(b.bmp);
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            text-align: center;
-            font-size: 20px;
-            color: white
+        .fal {
+            width: 850px;
+            margin: 0px auto;
+            background-image: url(lt.bmp), url(rt.bmp), url(lb.bmp), url(rb.bmp), url(lc.bmp), url(rc.bmp);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y;
+            background-position: left top, right top, left bottom, right bottom, left bottom, right top;
+            padding-bottom: 200px;
         }
 
-        h1 {
-            font: normal bold 60px sans-serif;
-        }
-
-        .section {
+        .name {
+            width: 1000px;
+            height: 80px;
+            margin: 0px auto;
             display: flex;
-            justify-content: space-around;
+            font-size: 80px;
+            font-weight: 400;
+            justify-content: center;
+            padding: 50px 0px 10px 5px;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
         }
 
-        .section>div {
+        .container {
+            width: 500px;
             display: flex;
-            flex-direction: column;
-        }
-
-        .main {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .head {
-            min-width: 600px;
+            justify-content: space-evenly;
+            font-family: 'Press Start 2P', cursive;
             text-align: center;
             white-space: nowrap;
             margin: 0 auto;
-            font-family: sans-serif;
-        }
-
-        a {
-            color: black;
-            border-radius: 10px;
-            width: 200px;
-            padding: 15px 10px;
-            transition: all 0.3s ease;
-            font-size: 20px;
-            text-decoration: none;
-            border: solid 2px black;
-            background-color: white;
-        }
-
-        span {
-            color: black;
-            border-radius: 10px;
-            padding: 5px 10px;
-            font-size: 20px;
-            text-decoration: none;
-            border: solid 2px black;
-            background-color: white;
-            margin: 0px 10px;
-        }
-
-        .done {
-            background-color: green;
-
-        }
-
-        .remake {
-            background-color: yellow
+            flex-direction: column;
         }
 
         .project {
-            background-color: slateblue
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(137, 43, 226, 0.6);
+        }
+
+        .html {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .work {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+            padding: 100px 0px 30px 0px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+            padding: 30px 0px;
+        }
+
+        a {
+            color: white;
+            border-radius: 5px;
+            width: 200px;
+            padding: 15px 10px;
+            transition: all 0.5s ease;
+            font-size: 15px;
+            text-decoration: none;
+            border: solid 2px white;
+            background-color: black;
+            margin: 10px 0px;
         }
 
         a:hover {
             transform: scale(1.5);
         }
-    </style>
 
+        .done {
+            color: rgba(2, 190, 2, 0.6);
+
+        }
+
+        .remake {
+            color: rgba(241, 241, 0, 0.6);
+        }
+
+        .p {
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 920px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
 </head>
 
-
 <body>
-    <div class="main">
+    <!--ФИО-->
+    <div class="name">
+        <h1>Машурин <span>Егор</span></h1>
+    </div>
+    <div class="fal">
+        <div class="container">
 
-        <div class="head">
-            <h1>Машурин Е.А.</h1>
-            <!--START-->
-            <hr>
-            <hr>
-            <div style="margin: 20px 0px">
-                <span>Не проверено</span>
-                <span class="remake">Есть косяк</span>
-                <span class="done">Нет косяков</span>
-                <span class="project">Проекты</span>
-            </div>
-            <!--Проэкты-->
-            <hr>
-            <hr>
+            <!--Проекты-->
             <h3>PROGECT</h3>
-            <div class="section">
-                <div>
-                    <a class="project" href="project/gthrees.html" target="_blank">project1</a>
-                    <a class="project" href="project/project2/shkola.html" target="_blank">project2</a>
-                </div>
+            <div class="project">
+                <a class="project" href="project/gthrees.html" target="_blank">project1</a>
+                <a class="project" href="project/project2/shkola.html" target="_blank">project2</a>
             </div>
+
             <!--Домашка HTMC CSS 1-->
-            <hr>
-            <hr>
             <h3>HTMLCSS 1</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a class="done" href="home/baza/diary/DIARY.html" target="_blank">diary</a><br>
+                    <a class="done" href="home/baza/diary/DIARY.html" target="_blank">diary</a>
                     <a class="done" href="home/baza/vizbor/VIZBOR1.html" target="_blank">vizbor</a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a class="done"
-                        href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsuetaaaa.github.io%2FMashurinEgor%2F"
-                        target="_blank">valid</a><br>
-                    <a class="done" href="home/add/1.2+oldtag/1.2+oldtag.html" target="_blank">oldtag</a><br>
+                    <a class="done" href="" target="_blank">valid</a>
+                    <a class="done" href="home/add/1.2+oldtag/1.2+oldtag.html" target="_blank">oldtag</a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 2-->
-            <hr>
             <h3>HTMLCSS 2</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
                     <a class="done" href="home/baza/book/book.html" target="_blank">book</a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
                     <a class="done" href="home/add/skob/skob.html" target="_blank">skob</a>
-
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 3-->
-            <hr>
             <h3>HTMLCSS 3</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
                     <a class="done" href="home/baza/fonts/fonts.html" target="_blank">fonts</a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a class="done" href="home/add/font/font.html" target="_blank">font</a> <br>
+                    <a class="done" href="home/add/font/font.html" target="_blank">font</a>
                     <a class="done" href="home/add/safe/safe.html" target="_blank">safe</a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 4-->
-            <hr>
             <h3>HTMLCSS 4</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a class="done" href="home/baza/frame/frame.html" target="_blank">frame</a> <br>
+                    <a class="done" href="home/baza/frame/frame.html" target="_blank">frame</a>
                     <a class="done" href="home/baza/5.60/5.60.html" target="_blank">5.60</a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a class="done" href="home/add/1tag/1tag.html" target="_blank">1tag</a> <br>
-                    <a class="done" href="home/add/area/area.html" target="_blank">area</a> <br>
-                    <a class="done" href="home/add/nocut/nocut.html" target="_blank">nocut</a> <br>
-                    <a href="home/add/tefal/tefal.html" target="_blank">tefal</a> <br>
+                    <a class="done" href="home/add/1tag/1tag.html" target="_blank">1tag</a>
+                    <a class="done" href="home/add/area/area.html" target="_blank">area</a>
+                    <a class="done" href="home/add/nocut/nocut.html" target="_blank">nocut</a>
+                    <a class="" href="home/add/tefal/tefal.html" target="_blank">tefal</a>
                     <a class="done" href="home/add/cards/cards.html" target="_blank">cards</a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 5-->
-            <hr>
             <h3>HTMLCSS 5</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a class="done" href="home/baza/tabl/tabl.html" target="_blank">tabl</a> <br>
+                    <a class="done" href="home/baza/tabl/tabl.html" target="_blank">tabl</a>
                     <a class="remake" href="home/add/div/div.html" target="_blank">div</a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a href="home/add/ball12/ball12.html" target="_blank">ball12</a> <br>
+                    <a class="" href="home/add/ball12/ball12.html" target="_blank">ball12</a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 6-->
-            <hr>
             <h3>HTMLCSS 6</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a href="home/baza/links/links.html" target="_blank">links</a>
-                    <a href="home/baza/chess/chess.html" target="_blank">chess</a>
-                    <a href="home/baza/stars/stars.html" target="_blank">stars</a>
-
+                    <a class="" href="home/baza/links/links.html" target="_blank">links</a>
+                    <a class="" href="home/baza/chess/chess.html" target="_blank">chess</a>
+                    <a class="" href="home/baza/stars/stars.html" target="_blank">stars</a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 7-->
-            <hr>
             <h3>HTMLCSS 7</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a href="" target="_blank"></a>
+                    <a class="" href="" target="_blank"></a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a href="" target="_blank"></a> <br>
+                    <a class="" href="" target="_blank"></a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 8-->
-            <hr>
             <h3>HTMLCSS 8</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a href="" target="_blank"></a>
+                    <a class="" href="" target="_blank"></a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a href="" target="_blank"></a> <br>
+                    <a class="" href="" target="_blank"></a>
                 </div>
             </div>
+
             <!--Домашка HTMC CSS 9-->
-            <hr>
             <h3>HTMLCSS 9</h3>
-            <div class="section">
-                <div>
+            <div class="html">
+                <div class="work">
                     <h4>home:</h4>
-                    <a href="" target="_blank"></a>
+                    <a class="" href="" target="_blank"></a>
                 </div>
-                <div>
+                <div class="work">
                     <h4>add:</h4>
-                    <a href="" target="_blank"></a> <br>
+                    <a class="" href="" target="_blank"></a>
                 </div>
             </div>
+
             <!--END-->
-            <hr>
-            <hr>
         </div>
+    </div>
 
-
+    <!--©-->
+    <div class="p">
+        <p>work by <span>SUETAAAA</span></p>
+        <p>style by <span>EMPRESS</span></p>
+    </div>
     </div>
 </body>
 
