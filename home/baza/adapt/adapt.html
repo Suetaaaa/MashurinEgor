@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADAPT</title>
-    
-    <style>
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ADAPT</title>
 
-}
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
 
+      }
 
-.clearfix::after {
-   content: '';
-   display: block;
-   clear: both;
-}
+      .clearfix::after {
+         content: '';
+         display: block;
+         clear: both;
+      }
 
-body {
-   min-width: 360px;
-}
+      body {
+         min-width: 360px;
+      }
 
-footer,
-header {
-   text-align: center;
-   background-color: #add8e6;
-   color: #0a0dfe;
-   padding: 10px;
+      footer,
+      header {
+         text-align: center;
+         background-color: #add8e6;
+         color: #0a0dfe;
+         padding: 10px;
 
-}
+      }
 
-.main {
+      .main {
 
-   background-image: url(back.jpeg);
-   background-repeat: repeat-y;
-}
+         background-image: url(back.jpeg);
+         background-repeat: repeat-y;
+      }
 
-.left {
-   width: 250px;
-   float: left;
-   margin-right: 30px;
-   padding: 40px 0 0 40px;
-}
+      .left {
+         width: 250px;
+         float: left;
+         margin-right: 30px;
+         padding: 40px 0 0 40px;
+      }
 
+      .center {
+         text-align: center;
+         overflow: hidden;
+         margin-left: 280px;
+         background-image: url(bool.png);
+         background-repeat: repeat-y;
+         background-position: right;
+         background-size: 70px;
+      }
 
+      img {
+         float: left;
+         padding: 0 20px 10px 0;
+      }
 
-.center {
-   text-align: center;
-   overflow: hidden;
-   margin-left: 280px;
-   background-image: url(bool.png);
-   background-repeat: repeat-y;
-   background-position: right;
-   background-size: 70px;
-}
+      p {
+         text-align: left;
+         padding-bottom: 25px;
+         font-size: 25px;
+      }
 
-img {
-   float: left;
-   padding: 0 20px 10px 0;
-}
+      h2 {
+         margin: 10px 0;
+      }
 
-p {
-   text-align: left;
-   padding-bottom: 25px;
-   font-size: 25px;
-}
+      h3 {
+         margin: 0 0 10px -20px;
+      }
 
-h2 {
-   margin: 10px 0;
-}
+      @media all and (max-width: 900px) {
+         h1,
+         h2,
+         h3 {
+            font-size: 2rem;
+         }
+         img {
+            float: none;
+            width: 100%;
+            padding: 0 0 10px 0;
+         }
+         p {
+            font-size: 1.2rem;
+         }
+      }
 
-h3 {
-   margin: 0 0 10px -20px;
-}
+      @media all and (max-width: 650px) {
+         .left {
+            float: none;
+            padding: 30px;
+            width: 100%;
+            background-color: #f0e78c;
+         }
+         .left ul {
+            font-size: 1.5rem;
+         }
+         p {
+            font-size: 1.5rem;
+         }
+         h3 {
+            margin: 0 auto;
+         }
+         .center {
+            margin-left: 0;
 
-@media all and (max-width: 900px) {
-
-h1,
-h2,
-h3 {
-   font-size: 2rem;
-}
-
-img {
-   float: none;
-   width: 100%;
-   padding: 0 0 10px 0;
-}
-
-p {
-   font-size: 1.2rem;
-}
-
-}
-
-@media all and (max-width: 650px) {
-.left {
-   float: none;
-   padding: 30px;
-   width: 100%;
-   background-color: #f0e78c;
-}
-
-.left ul {
-   font-size: 1.5rem;
-}
-
-p {
-   font-size: 1.5rem;
-}
-
-h3 {
-   margin: 0 auto;
-}
-
-.center {
-   margin-left: 0;
-
-}
-
-.main {
-   background-image: none;
-}
-
-}
-    </style>
+         }
+         .main {
+            background-image: none;
+         }
+      }
+   </style>
 </head>
-
 <body>
-    <header>
-        <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
-     </header>
-     <div class="main clearfix">
-        <div class="left">
-           <h3>Виды спорта:</h3>
-           <ul>
+   <header>
+      <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+   </header>
+   <div class="main clearfix">
+      <div class="left">
+         <h3>Виды спорта:</h3>
+         <ul>
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">конькобежный спорт</a></li>
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">биатлон</a></li>
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">футбол</a></li>
@@ -148,24 +135,24 @@ h3 {
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">синхронное плавание</a></li>
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">шахматы</a></li>
             <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">шашки</a></li>
-        </ul>
-        </div>
-        <div class="center">
-           <h2>ФУТБОЛ</h2>
-           <img src="club.jpeg" alt="">
-           <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или
+         </ul>
+      </div>
+      <div class="center">
+         <h2>ФУТБОЛ</h2>
+         <img src="club.jpeg" alt="">
+         <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или
             другими частями тела (кроме рук) большее количество раз, чем команда соперника.
             Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
             Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
             таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы
             очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости
             от характера игры.
-           </p>
-        </div>
-     </div>
-     <footer>
-        <h2>ГЛАВНОЕ НЕ ПОБЕДА А УЧАСТИЕ</h2>
-     </footer>
+         </p>
+      </div>
+   </div>
+   <footer>
+      <h2>ГЛАВНОЕ НЕ ПОБЕДА А УЧАСТИЕ</h2>
+   </footer>
 </body>
 
 </html>
