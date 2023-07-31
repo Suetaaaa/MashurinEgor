@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORM</title>
 </head>
 
 <body>
@@ -28,25 +28,24 @@
             </label><br>
             <label>Пол:
                 <select name="пол" style="margin: 10px 0px 10px 65px; width: 177px;">
-                    <option value="ж">Женщина</option>
-                    <option value="м">Мужчина</option>
+                    <option value="Женщина">Женщина</option>
+                    <option value="Мужчина">Мужчина</option>
                 </select>
             </label><br>
             <label>Перечислите личные качества:
-                <input type="text" name="качества">
+                <textarea type="text" name="качества" style="min-width: 500px; min-height: 60px;"></textarea>
             </label>
         </fieldset>
         <fieldset style="margin: 10px 0px;">
             <legend>Выберити ваших любимых животных</legend>
             <div style="text-align: center;">
-                <input type="checkbox" name="1">Зебра
-                <input type="checkbox" name="2">Кошак
-                <input type="checkbox" name="3">Анаконда
-                <input type="checkbox" name="4">Человек <br>
-                <input type="checkbox" name="5">Слон
-                <input type="checkbox" name="6">Антилопа
-                <input type="checkbox" name="7">Голубь
-                <input type="checkbox" name="8">Голубь
+                <input type="checkbox" name="Зебра">Зебра
+                <input type="checkbox" name="Кошак">Кошак
+                <input type="checkbox" name="Анаконда">Анаконда
+                <input type="checkbox" name="Человек">Человек
+                <input type="checkbox" name="Слон">Слон
+                <input type="checkbox" name="Антилопа">Антилопа
+                <input type="checkbox" name="Голубь">Голубь
             </div>
         </fieldset>
         <input type="submit" value="Отправить форму!">
