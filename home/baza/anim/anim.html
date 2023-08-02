@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIM</title>
+
+    <style>
+        body {
+            margin: 100px 100px;
+        }
+
+        @keyframes animee {
+            0% {
+                background: url(../../../Index/anime/gost.png) 0 0;
+            }
+
+            100% {
+                background: url(../../../Index/anime/gost.png) -1080px 0;
+            }
+        }
+
+        .anime {
+            width: 90px;
+            height: 90px;
+            animation: animee 0.8s steps(12) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="anime"></div>
+</body>
+
+</html>
