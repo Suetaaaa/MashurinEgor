@@ -3,8 +3,8 @@
     100% {background: url(../anime/gost.png) -1080px 0;}
 }
 @keyframes textt {
-    0%, 100% {bottom: 80px;}
-    50% {bottom: 120px;}
+    0%, 100% {bottom: 90px;}
+    50% {bottom: 100px;}
 }
 .anime {
     width: 90px;
@@ -17,9 +17,9 @@
 .text {
     width: 90px;
     height: 90px;
-    animation: textt 0.97s  infinite;
+    animation: textt 0.7s steps(10) infinite;
     position: absolute;
-    bottom: 80px;
+    bottom: 90px;
     left: -10px;
     line-height: 140%;
 }
