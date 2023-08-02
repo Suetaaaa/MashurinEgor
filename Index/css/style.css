@@ -2,19 +2,6 @@ body {
     background: url(../img/b.bmp);
 }
 
-@keyframes animee {
-    0% {background: url(../../Index/anime/gost.png) 0 0;}
-    100% {background: url(../../Index/anime/gost.png) -1080px 0;}
-}
-.anime {
-    width: 90px;
-    height: 90px;
-    animation: animee 0.8s steps(12) infinite;
-    position: absolute;
-    bottom: 40px;
-    left: -10px;
-}
-
 .fal {
     width: 800px;
     margin: 0px auto;
