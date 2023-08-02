@@ -2,6 +2,10 @@
     0% {background: url(../anime/gost.png) 0 0;}
     100% {background: url(../anime/gost.png) -1080px 0;}
 }
+@keyframes textt {
+    0%, 100% {bottom: 80px;}
+    50% {bottom: 120px;}
+}
 .anime {
     width: 90px;
     height: 90px;
@@ -9,10 +13,6 @@
     position: absolute;
     bottom: 40px;
     left: -10px;
-}
-@keyframes textt {
-    0%, 100% {bottom: 80px;}
-    50% {bottom: 120px;}
 }
 .text {
     width: 90px;
