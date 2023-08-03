@@ -23,3 +23,6 @@
     left: -10px;
     line-height: 140%;
 }
+.p:hover .anime{
+    animation: animee 0.2s steps(12) infinite; ;
+}
