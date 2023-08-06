@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            min-width: 360px;
+        }
+
+        footer,
+        header {
+            text-align: center;
+            background-color: #add8e6;
+            color: #0a0dfe;
+            padding: 10px;
+        }
+
+        @media all and (max-width: 650px) {
+
+            footer,
+            header {
+                display: none;
+            }
+        }
+
+        .main {
+            display: flex;
+        }
+
+        @media all and (max-width: 650px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+
+        .left {
+            padding: 40px 0 40px 40px;
+            background-color: yellow;
+            flex: 0 0 250px;
+        }
+
+        @media all and (max-width: 650px) {
+            .left {
+                order: 1;
+                background-color: white;
+                padding: 0;
+            }
+        }
+
+        .left h3 {
+            margin: 0 0 10px -20px;
+        }
+
+        @media all and (max-width: 650px) {
+            .left h3 {
+                font-size: 1.5rem;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        @media all and (max-width: 650px) {
+            .left ul {
+                font-size: 1.5rem;
+                list-style-type: none;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: start;
+            }
+        }
+
+        .left ul li {
+            margin-right: 20px;
+        }
+
+        .center {
+            text-align: center;
+            margin-left: 20px;
+            background-image: url(bool.png);
+            background-repeat: repeat-y;
+            background-position: right;
+            background-size: 70px;
+        }
+
+        @media all and (max-width: 650px) {
+            .center {
+                background-image: none;
+                margin: 0 0 40px 0;
+            }
+        }
+
+        .center h2 {
+            margin: 20px 0;
+        }
+
+        .center img {
+            float: left;
+            padding: 0 20px 10px 0;
+        }
+
+        @media all and (max-width: 650px) {
+            .center img {
+                float: none;
+                width: 100%;
+                padding: 0 0 10px 0;
+            }
+        }
+
+        .center p {
+            text-align: left;
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
+
+        @media all and (max-width: 650px) {
+            .center p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+    </header>
+    <div class="main ">
+        <div class="left">
+            <h3>Виды спорта:</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">конькобежный спорт</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">биатлон</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">футбол</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">стрельба из лука</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">прыжки в длину</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">прыжки в высоту</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">фигурное катание</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">синхронное плавание</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">шахматы</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">шашки</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <h2>ФУТБОЛ</h2>
+            <img src="club.jpeg" alt="">
+            <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или
+                другими частями тела (кроме рук) большее количество раз, чем команда соперника.
+                Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
+                Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для
+                таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы
+                очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости
+                от характера игры.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <h2>ГЛАВНОЕ НЕ ПОБЕДА А УЧАСТИЕ</h2>
+    </footer>
+</body>
+
+</html>

@@ -8,28 +8,91 @@
 
     <style>
         body {
-            margin: 100px 100px;
+            margin: 50px;
         }
 
-        @keyframes animee {
-            0% {
-                background: url(../../../Index/anime/gost.png) 0 0;
-            }
+        .box {
+            margin: 0 auto;
+            background-color: black;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            perspective: 500px;
+            justify-content: space-evenly;
+        }
 
+        .box div {
+            width: 150px;
+            height: 150px;
+        }
+
+        .box:hover .ani2 {
+            transform: skew(45deg);
+        }
+
+        .box:hover .ani3 {
+            transform: rotate(-50deg);
+            transform: translate3d(0, 0, 200px);
+        }
+
+        .box:hover .ani4 {
+            transform: scale(0.8);
+        }
+
+        .box:hover .ani5 {
+            transform: rotate(-50deg);
+        }
+
+        @keyframes w-h {
+
+            0%,
             100% {
-                background: url(../../../Index/anime/gost.png) -1080px 0;
+                transform: translate(0, -150px);
+            }
+
+            50% {
+                transform: translate(0, 150px);
             }
         }
 
-        .anime {
-            width: 90px;
-            height: 90px;
-            animation: animee 0.8s steps(12) infinite;
+        .ani1 {
+            background-color: red;
+            animation: w-h 4s ease-in-out infinite;
+        }
+
+        .ani2 {
+            background-color: blue;
+            transition: 1s ease;
+        }
+
+        .ani3 {
+            background-color: orange;
+            transition: 1s ease;
+        }
+
+
+        .ani4 {
+            background-color: yellow;
+            transition: 1s ease;
+        }
+
+        .ani5 {
+            background-color: green;
+            transition: 1s ease;
         }
     </style>
 </head>
+
 <body>
-    <div class="anime"></div>
+    <div class="box">
+        <div class="ani1"></div>
+        <div class="ani2"></div>
+        <div class="ani3"></div>
+        <div class="ani4"></div>
+        <div class="ani5"></div>
+    </div>
+    </div>
 </body>
 
 </html>
