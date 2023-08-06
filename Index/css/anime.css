@@ -9,7 +9,7 @@
 .anime {
     width: 90px;
     height: 90px;
-    animation: animee 0.8s steps(12) infinite;
+    animation: animee 0.7s steps(12) infinite;
     position: absolute;
     bottom: 40px;
     left: -10px;
@@ -23,6 +23,6 @@
     left: -10px;
     line-height: 140%;
 }
-.p:hover .anime{
+.anime:hover {
     animation: animee 0.2s steps(12) infinite; ;
 }
