@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #app{
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+            flex-flow: wrap;
+            justify-content: space-between;
+            
+        }
+        #app > div{
+            margin-bottom: 20px;
+            transition: 0.5s;
+        }
+        #app > div:hover{
+            transform: scale(1.1);
+            z-index: 999;
+        }
+        .card {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button onclick="rr(50)">open</button>
+    <button onclick="rr(60)">open</button>
+    <button onclick="rr(20)">open</button>
+
+
+    <div id="app"></div>
+
+    <script>
+        var game = [
+            {
+                neme: "Metro 2033 Redux",
+                gena: "шутер, хоррор",
+                imgUrl: "https://images.deal.by/391516323_metro-2033-redux.jpg",
+                cene: 10
+            },
+            {
+                neme: "Metro: Last Light Redux",
+                gena: "шутер, хоррор",
+                imgUrl: "https://images.deal.by/391512778_metro-last-light.jpg",
+                cene: 20
+            }, 
+            {
+                neme: "Transformers",
+                gena: "адвенчура",
+                imgUrl: "https://images.deal.by/391505684_antologiya-transformers-kopiya.jpg",
+                cene: 30
+            }, 
+            {
+                neme: "Call of Duty: Black Ops II",
+                gena: "шутер",
+                imgUrl: "https://images.deal.by/391496842_call-of-duty.jpg",
+                cene: 40
+            }, 
+            {
+                neme: "Medal of Honor",
+                gena: "шутер, историч",
+                imgUrl: "https://images.deal.by/370895791_antologiya-medal-of.jpg",
+                cene: 50
+            },
+            {
+                neme: "Call of Duty: Modern Warfare 3",
+                gena: "шутер",
+                imgUrl: "https://images.deal.by/382531257_call-of-duty.jpg",
+                cene: 60
+            },
+            {
+                neme: "Call of Duty: Modern Warfare 2",
+                gena: "шутер",
+                imgUrl: "https://images.deal.by/382530602_call-of-duty.jpg",
+                cene: 70
+            },
+            {
+                neme: "Call of Duty 4: Modern Warfare",
+                gena: "шутер",
+                imgUrl: "https://images.deal.by/382529579_call-of-duty.jpg",
+                cene: 80
+            }
+        ]
+
+        var app = document.getElementById("app");
+
+        function rr(num) {
+            var gameHtml = "";
+
+
+
+            for (var i = 0; i < game.length; i++) {
+                if (game[i].cene >= num) {
+                    gameHtml += `
+                <div class="card" style="width: 100px;">
+                    <img src="${game[i].imgUrl}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">${game[i].neme}</h3>
+                        <h4 class="card-title">${game[i].gena}</h4>
+                        <h5 class="card-title">${game[i].cene} р</h5>
+                    </div>
+                </div>`
+                }
+                
+            }
+
+
+            app.innerHTML = gameHtml;
+        }
+
+    </script>
+
+</body>
+
+</html>
