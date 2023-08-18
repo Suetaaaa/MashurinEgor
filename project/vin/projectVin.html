@@ -470,12 +470,13 @@
         }
 
         .cont {
-            background: #111214;
-    display: flex;
-    justify-content: space-around;
-        }
-        .contt {
-            width: 450px;
+            background: url(img/bgend.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 350px;
+            margin-top: 50px;
         }
 
         .cont .contt h1 {
@@ -487,6 +488,7 @@
             line-height: normal;
             letter-spacing: 0.8px;
             text-transform: uppercase;
+            margin-bottom: 50px;
         }
 
         .cont .contt span {
@@ -499,10 +501,105 @@
             letter-spacing: 1.6px;
             text-transform: uppercase;
         }
-        .cont .contt > div > div {
+
+        .cont .contt>div>div {
             display: flex;
-    align-items: center;
-    justify-content: space-around;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .mb-3 h1 {
+            color: #FFF;
+            font-family: Anton;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-bottom: solid 1px grey;
+            padding-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        .mb-3 h1 span {
+            color: #FE390C;
+        }
+
+        .cont .contt p {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.32px;
+            margin-bottom: 10px;
+        }
+
+        .cont .contt p:nth-child(2) {
+            color: #A9A9AA;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.28px;
+            margin-bottom: 30px;
+        }
+
+        .contt div>div img {
+            margin: 0px 20px 25px 0px;
+        }
+
+        .cont .mb-3 p {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.28px;
+            margin: 40px 0px 0px 0px;
+
+        }
+        .cont .mb-3 a {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            display: inline-flex;
+            padding: 16px 24px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 4px;
+            background: #FE390C;
+            text-decoration: none;
+            transition: 0.5s;
+            margin-top: 24px;
+        }
+        .cont .mb-3 a:hover {
+            transform: scale(1.2)
+        }
+
+        .mes ul {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            padding: 0px 100px 0px 0px;
+        }
+
+        .mes ul li {
+            background-color: rgba(255, 255, 255, 0.10);
+            padding: 10px 13px 13px 13px;
+            border-radius: 50%;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .mes ul li:hover {
+            transform: scale(1.2)
         }
     </style>
 
@@ -681,13 +778,14 @@
             </div>
         </div>
     </div>
+    <div>
     <div class="box">
         <div class="testimonial">
             <h1><span>04 </span> testimonial</h1>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card mb-3" style="max-width: 1140px">
+                        <div class="card mb-3" style="max-width: 1140px; border: solid white;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="img/pid.jpg" class="img-fluid rounded-start" alt="...">
@@ -705,7 +803,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mb-3" style="max-width: 1140px;">
+                        <div class="card mb-3" style="max-width: 1140px; border: solid white;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="img/pid.jpg" class="img-fluid rounded-start" alt="...">
@@ -723,7 +821,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mb-3" style="max-width: 1140px;">
+                        <div class="card mb-3" style="max-width: 1140px; border: solid white;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="img/pid.jpg" class="img-fluid rounded-start" alt="...">
@@ -753,7 +851,8 @@
                 </button>
             </div>
 
-        </div>
+        </div></div>
+        <div>
         <div class="cont">
             <div class="contt">
                 <h1><span>05 </span> contact</h1>
@@ -768,47 +867,51 @@
                 </div>
                 <div>
                     <div>
-                        <img src="img/Call.png" alt="">
+                        <img src="img/Mes.png" alt="">
                         <div>
-                            <p>Phone</p>
-                            <p>(219) 555-0114</p>
+                            <p>Email</p>
+                            <p>robertfox@example.com</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <img src="img/Call.png" alt="">
+                        <img src="img/loc.png" alt="">
                         <div>
-                            <p>Phone</p>
-                            <p>(219) 555-0114</p>
+                            <p>Address</p>
+                            <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
                         </div>
                     </div>
+                </div>
+                <div class="mes">
+                    <ul>
+                        <li><a href=""><img src="img/F1.png" alt=""></a></li>
+                        <li><a href=""><img src="img/F2.png" alt=""></a></li>
+                        <li><a href=""><img src="img/F3.png" alt=""></a></li>
+                        <li><a href=""><img src="img/F4.png" alt=""></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="mb-3">
                 <h1>I’m always open to discussing <span>product design work</span> or partnership </h1>
                 <div>
-                <div>
-                    <p>Адрес электронной почты</p>
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <div>
+                        <p>Email Address*</p>
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
                 </div>
-                <div>
-                    <p>Адрес электронной почты</p>
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                
-            </div>
-<div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Пример текстового поля</label>
+                <div class="mb-3">
+                    <p>Message</p>
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <a href="">send message</a>
+            </div>
         </div></div>
-    </div>
-
+    
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
