@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../drop/reset.css">
+    <link rel="stylesheet" href="../../drop/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        header a {
+            color: #A9A9AA;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        header a:hover {
+            color: #FE390C;
+            transform: scale(1.2)
+        }
+
+        body {
+            background-image: url(img/bgcont.png);
+            background-repeat: no-repeat;
+            background-position: center 0px;
+            min-width: 1440px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 1140px;
+            height: 500px;
+            padding: 140px;
+            color: #FFF;
+            text-align: center;
+            background: url(img/bgabout.png);
+            background-repeat: no-repeat;
+            background-position: center 75px;
+        }
+
+        .logo h1 {
+            font-family: Anton;
+            font-size: 130px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 154px;
+            letter-spacing: 1.95px;
+            text-transform: uppercase;
+        }
+
+        .box {
+            width: 1140px;
+            margin: 0px auto;
+        }
+
+        .navig {
+            color: #A9A9AA;
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact {
+            color: #FE390C;
+            border-radius: 4px;
+            border: 1px solid #FE390C;
+            display: inline-flex;
+            padding: 12px 16px;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .end {
+            background-color: #0C0C0E;
+            height: 80px;
+            margin-top: 60px;
+        }
+
+        .me {
+            display: flex;
+            align-items: center;
+        }
+
+        .meme {
+            margin-left: 80px;
+        }
+
+        .meme h1 {
+            color: #111214;
+            font-family: Anton;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-top: 60px;
+        }
+
+        .meme strong {
+            color: #FE390C;
+            font-family: Anton;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+        }
+
+        .meme h2 {
+            color: #000;
+            font-family: Anton;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .meme>p {
+            color: #A9A9AA;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: -0.28px;
+        }
+
+        .meme>div>div span {
+            color: #FE390C;
+            font-family: Anton;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;
+        }
+
+        .meme>div>div p {
+            color: #111214;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: -0.56px;
+            width: 50px;
+            padding-left: 10px;
+        }
+
+        .meme>div {
+            display: flex;
+            width: 350px;
+            justify-content: space-between;
+        }
+        .meme>div>div {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <img src="img/minLog.png" alt="log">
+            <ul class="navig">
+                <li><a href="projectVin.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="service.html">SERVISE</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+            </ul>
+            <a class="contact" href="">contact</a>
+        </header>
+        <div class="logo">
+            <h1>about</h1>
+        </div>
+        <div class="me">
+            <div><img src="img/chel.png" alt=""></div>
+            <div class="meme">
+                <h1><strong>01 </strong> about me</h1>
+                <h2>I'm Professional Designer and Front-End Web Developer That Solve Your Problems</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit.</p>
+                <div>
+                    <div>
+                        <span>8</span>
+                        <p>Year of experience</p>
+                    </div>
+                    <div>
+                        <span>25</span>
+                        <p>Saticfied Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="end"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
