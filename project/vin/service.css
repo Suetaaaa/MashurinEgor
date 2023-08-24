@@ -395,6 +395,7 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        padding: 0px;
     }
 
     .servis li {
