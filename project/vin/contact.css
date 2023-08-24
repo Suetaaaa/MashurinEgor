@@ -1,3 +1,11 @@
+body {
+    background-image: url(img/bgcont.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    min-width: 1440px;
+    margin-top: 20px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -19,14 +27,6 @@ header a {
 header a:hover {
     color: #FE390C;
     transform: scale(1.2)
-}
-
-body {
-    background-image: url(img/bgcont.png);
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    min-width: 1440px;
-    margin-top: 20px;
 }
 
 .logo {
